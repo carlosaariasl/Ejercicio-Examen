@@ -1,0 +1,159 @@
+package examen;
+import javax.swing.JOptionPane;
+import java.util.Scanner;
+public class Examen {
+
+    public static void main(String[] args) {
+   Scanner td= new Scanner(System.in);
+   int p1,p2,p3,p4;
+   int CA1,CA2,CA3,CA4;
+   int NO1,NO2,NO3,NO4;//alumno 1
+   int NO11,NO22,NO33,NO44;//alumno 2
+    int n3,NO32,NO30,NO34;//alumno 3
+      int n1,n2,n41,n4;//alumno 4
+    
+   //alumno 1
+   System.out.print("Ingrese numero de carnet (1):");
+   CA1= td.nextInt();
+     System.out.print("Ingrese nota  (1):");
+   NO1= td.nextInt();
+      System.out.print("Ingrese nota  (2):");
+   NO2= td.nextInt();
+     System.out.print("Ingrese nota  (3):");
+   NO3= td.nextInt();
+     System.out.print("Ingrese nota  (4):");
+   NO4= td.nextInt();
+   //alumno 2
+    System.out.print("Ingrese numero de carnet (2):");
+   CA2= td.nextInt();
+     System.out.print("Ingrese nota  (1):");
+   NO11= td.nextInt();
+      System.out.print("Ingrese nota  (2):");
+   NO22= td.nextInt();
+     System.out.print("Ingrese nota  (3):");
+   NO33= td.nextInt();
+     System.out.print("Ingrese nota  (4):");
+   NO44= td.nextInt();
+   
+   //alumno 3 
+     System.out.print("Ingrese numero de carnet (3):");
+   CA3= td.nextInt();
+    System.out.print("Ingrese nota  (1):");
+     n3=td.nextInt();
+      System.out.print("Ingrese nota  (2):");
+   NO32= td.nextInt();
+     System.out.print("Ingrese nota  (3):");
+   NO30= td.nextInt();
+     System.out.print("Ingrese nota  (4):");
+   NO34= td.nextInt();
+   
+    //alumno 4
+     System.out.print("Ingrese numero de carnet (4):");
+   CA4= td.nextInt();
+    System.out.print("Ingrese nota  (1):");
+     n1=td.nextInt();
+      System.out.print("Ingrese nota  (2):");
+   n2= td.nextInt();
+     System.out.print("Ingrese nota  (3):");
+   n41= td.nextInt();
+     System.out.print("Ingrese nota  (4):");
+   n4= td.nextInt();
+   
+   p1=(NO1+NO2+NO3+NO4)/4;// promedio del alumno 1
+   p2= (NO11+NO22+NO33+NO44)/4;//alumno 2
+   p3=(n3+NO32+NO30+NO34)/4;//alumno 3
+   p4=(n1+n2+n41+n4)/4;//alumno 4
+   //datos del alumno 1
+     System.out.print("\nDATOS DEL ALUMNO 1:");
+  if(NO1>NO2){
+ 
+  System.out.print("\nNota1:"+NO1);}
+  else{
+       System.out.print("\nNota2:"+NO2);
+  }
+  
+   if(NO1>NO3){
+  System.out.print("\nNota1:"+NO1);}
+  else{
+       System.out.print("\nNota3:"+NO3);
+  }
+   if(NO1>NO4){
+  System.out.print("\nNota1:"+NO1);}
+  else{
+       System.out.print("\nNota4:"+NO4);
+        
+  }
+        System.out.print("\nPromedio:"+p1);
+
+
+  
+  //datos del alumno 2
+      System.out.print("\nDATOS DEL ALUMNO 2:");
+
+  if(NO11>NO22){
+ 
+  System.out.print("\nNota1:"+NO11);}
+  else{
+       System.out.print("\nNota2:"+NO22);
+  }
+  
+   if(NO11>NO33){
+  System.out.print("\nNota1:"+NO11);}
+  else{
+       System.out.print("\nNota3:"+NO33);
+  }
+   if(NO11>NO44){
+  System.out.print("\nNota1:"+NO11);}
+  else{
+       System.out.print("\nNota4:"+NO44);
+        
+  }
+        System.out.print("\nPromedio:"+p2);
+   
+   //datos del alumno 3
+       System.out.print("\nDATOS DEL ALUMNO 3:");
+    
+  if(n3>NO32){
+ 
+  System.out.print("\nNota1:"+n3);}
+  else{
+       System.out.print("\nNota2:"+NO32);
+  }
+  
+   if(n3>NO30){
+  System.out.print("\nNota1:"+n3);}
+  else{
+       System.out.print("\nNota3:"+NO30);
+  }
+   if(n3>NO34){
+  System.out.print("\nNota1:"+NO1);}
+  else{
+       System.out.print("\nNota4:"+NO34);
+        
+  }
+    System.out.print("\nPromedio:"+p3);
+   //datos alumno 4 
+       System.out.print("\nDATOS DEL ALUMNO 4:");
+     
+  if(n1>n2){
+ 
+  System.out.print("\nNota1:"+n1);}
+  else{
+       System.out.print("\nNota2:"+n2);
+  }
+  
+   if(n1>n41){
+  System.out.print("\nNota1:"+n1);}
+  else{
+       System.out.print("\nNota3:"+n41);
+  }
+   if(n1>n4){
+  System.out.print("\nNota1:"+n1);}
+  else{
+       System.out.print("\nNota4:"+n4);
+        
+  }
+   System.out.print("\nPromedio:"+p4);
+    }
+    
+}
